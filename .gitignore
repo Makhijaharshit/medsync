@@ -35,3 +35,19 @@ yarn-error.log*
 
 # --- Docker ---
 *.pid
+
+# --- Logs & Runtime ---
+*.log
+backend.log
+frontend.log
+
+# --- Local Databases & Uploads ---
+*.db
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+
+# --- AI & PaddleOCR Model Caches ---
+.paddlex/
+.paddle/
+scratch_test_files/
+*.zip
